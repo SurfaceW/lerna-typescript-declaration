@@ -2,9 +2,13 @@
   "name": "arno-test-main",
   "version": "1.0.0",
   "description": "Arno main",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc"
+  },
+  "dependencies": {
+    "arno-test-extension": "^1.0.0",
+    "arno-test-sdk": "^1.0.0"
   },
   "author": "arno",
   "license": "ISC"

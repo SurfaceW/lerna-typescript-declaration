@@ -1,10 +1,15 @@
 {
 "compilerOptions": {
-  "module": "ES6",
+  "lib": ["ES2015", "DOM"],
+  "module": "CommonJS",
   "noImplicitAny": true,
   "removeComments": true,
-  "preserveConstEnums": true
+  "preserveConstEnums": true,
+  "moduleResolution": "Node",
+  "outDir": "./demo/dist",
+  "target": "ES2015",
+  "types": ["typings/*.d.ts"]
 },
-"include": ["src/**/*"],
+"include": ["src/**/*", "typings/*.d.ts"],
 "exclude": ["node_modules", "**/*.spec.ts"]
 }
